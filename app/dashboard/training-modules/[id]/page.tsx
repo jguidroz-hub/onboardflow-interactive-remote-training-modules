@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface TrainingModulesDetailItem
+interface TrainingModulesDetailItem {
   id: string;
   title?: string;
   status?: string;
@@ -10,7 +10,7 @@ interface TrainingModulesDetailItem
   [key: string]: any;
 }
 
-export default function TrainingModulesDetailPage
+export default function TrainingModulesDetailPage() {
   const [items, setItems] = useState<TrainingModulesDetailItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
