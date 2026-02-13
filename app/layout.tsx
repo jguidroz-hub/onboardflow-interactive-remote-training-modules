@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'OnboardFlow - Interactive Remote Training Modules',
-  description: 'Value Proposition: Helps HR teams and managers quickly create engaging, interactive training modules and quizzes for remote employee onboarding, ensuring consistent learning and compliance without extensive development.',
+  description: 'Value Proposition: Helps HR teams and managers quickly create engaging, interactive training modules',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
