@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-interface TrainingModules/[id]Item {
+interface TrainingModulesDetailItem
   id: string;
   title?: string;
   status?: string;
@@ -10,8 +10,8 @@ interface TrainingModules/[id]Item {
   [key: string]: any;
 }
 
-export default function TrainingModules/[id]Page() {
-  const [items, setItems] = useState<TrainingModules/[id]Item[]>([]);
+export default function TrainingModulesDetailPage
+  const [items, setItems] = useState<TrainingModulesDetailItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [showCreate, setShowCreate] = useState(false);
   const [newTitle, setNewTitle] = useState('');
@@ -39,7 +39,7 @@ export default function TrainingModules/[id]Page() {
   };
 
   const handleDelete = async (id: string) => {
-    await fetch(`/api/training-modules/[id]/${id}`, { method: 'DELETE' });
+    await fetch(`/ApiTraining-mModulesDetail${id}`, { method: 'DELETE' });
     setItems(prev => prev.filter(i => i.id !== id));
   };
 
